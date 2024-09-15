@@ -6,12 +6,328 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Document</title>
+    <style>
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        #container{
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        /* #header */
+        #header{
+            text-align: center;
+            padding: 48px;
+        }
+
+        #header h1{
+            font-size: 32px;
+        }
+        #header p{
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        /* #center */
+        #center{
+            align-items: flex-start;
+            margin-left: 88px;
+            margin-right: -24px;
+            display: flex;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        
+        /* main content */
+        #content{
+            padding-left: 152px;
+            padding-right: 40px;
+            max-width: 100%;
+        }
+
+        #content h2{
+            font-size: 24px;
+        }
+
+        #name{
+            display: flex;
+        }
+
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            padding: 8px;
+            padding-right:0px;
+            padding-left: 0px;
+        }
+
+        #fname{
+            float: left;
+            margin-right: 9px;
+        }
+
+        input{
+            border-radius: 6px;
+            border: 1px solid #ced4da;
+            padding: 6px;
+            padding-left: 8px;
+        }
+
+        label {
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+
+        ::placeholder{
+            color: #6c757d;
+            padding-left: 4px;
+        }
+
+        #Checkout{
+            background-color: #0e6efd;
+            padding: 12px;
+            width: 98.5%;
+            border-radius: 8px;
+            border: #0e6efd;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        #Checkout:hover{
+            background-color: #0f63e2;
+        }
+
+        #span-user{
+            display: flex;
+        }
+
+        #username{
+            border-bottom-left-radius:0px ;
+            border-top-left-radius:0px ;
+        }
+
+        #at-item{
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-left: 12px;
+            padding-right: 12px;
+            background-color: #e9ecef;
+            border: 1px solid#ced4da;
+            border-right: #ced4da;
+            display: flex;
+            border-top-left-radius:6px ;
+            border-bottom-left-radius:6px ;
+            font-size: 16px;
+        }
+
+        #email, #address, #address2{
+            width: 98.5%;
+        }
+
+        #location{
+            display:flex;
+            border-bottom: 1px solid #c5c6c7;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            gap: 18px;
+        }
+        
+        select{
+            font-size: 1.3em;
+            padding: 7.2px;
+            color: #6c757d;
+            border-radius: 6px;
+            font-size: 16px;
+            border: 1px solid#ced4da;
+        }
+
+        #country{
+            width: 236px;
+        }
+
+        #state{
+            width:191px;
+        }
+
+        #card-info{
+            display: flex;
+            gap: 24px;
+        }
+
+        #card-verify{
+            display: flex;
+            gap: 26px;
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid #c5c6c7;
+        }
+
+        #extra-label{
+            color:#6c757d;
+        }
+
+        #checkbox{
+            padding-bottom: 20px;
+            border-bottom: 1px solid #c5c6c7;
+            margin-bottom: 20px;
+        }
+
+        /* sidebar */
+
+        #cart{
+            padding-right:142px;
+            color: #0e6efd;
+        }
+
+        #three{
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            margin: 2px;
+            padding-top: 4.5px;
+            padding-bottom: 4.5px;
+            padding-left: 12px;
+            padding-right: 12px;
+            border-radius: 18px;
+            background-color: #0e6efd;
+        }
+
+        #sidebar-title{
+            display: flexbox;
+            margin-bottom: 20px;
+            justify-content: space-between;
+            margin-block-end: 19px;
+        }
+
+        .listitems{
+            list-style-type: none;
+            border: 1px solid #e2e2e2;
+            background-color: #fff;
+            border-radius: 6px;
+            line-height: 1.3;
+            padding-left: 0px;
+        }
+
+        .listitems span{
+            float: right;
+            color: #697279;
+        }
+
+        #item4 span{
+            color: green;
+        }
+
+        .item{
+            display: flex;
+            gap: 94px;
+            padding-top: 8px;
+            padding-bottom: 7px;
+            padding-left: 16px;
+            border-bottom: 1px solid #ced4da;
+        }
+
+        .item:nth-child(5){
+            border-bottom: 0px;
+        }
+
+        .item:nth-child(4){
+            color: green;
+            background-color: #f8f9fa;
+        }
+
+        #item1 h6, #item2 h6, #item3 h6, #item4 h6{
+            margin-bottom: 0px;
+        }
+
+        #item1 small, #item2 small, #item3 small{
+            color: #6c757d;
+        }
+
+        #item2, #item3{
+            width: 50%;
+        }
+
+        #item1, #item4, #item5{
+            width: 47%;
+        }
+
+        #item4-span{
+            color: green;
+        }
+
+        #item5 h6{
+            font-weight: 400;
+        }
+        #item5-span{
+            font-weight: bold;
+            color: #000;
+        }
+
+        #item-button{
+            background-color: #fff;
+            display: flex;
+            border: 1px solid #ced4da;
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        #promocode{
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 0px;
+            margin-right: -10px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        #redeem{
+            color: #fff;
+            padding: 6px;
+            padding-left: 12px;
+            padding-right: 12px;
+            border-radius: 8px;
+            margin-left: 0px;
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px;
+            border:1px solid #6c757d;
+            background-color: #6c757d;
+        }
+
+        /* footer */
+
+        #footer{
+            margin: 48px;
+            margin-left: 18px;
+            padding-top:48px ;
+            line-height: 0.4;
+            text-align: center;
+        }
+
+        #footer p{
+            color: #6c757d;
+            padding-left: 32px;
+            padding-top: 12px;
+        }
+
+        #menu{
+            list-style-type: none;
+        }
+
+        .menuitems{
+            display: inline-block;
+            margin: 4px;
+        }
+
+    </style>
 </head>
 
 <body>
 
     <div id="container">
-        <main>
+        <main> 
             <header id="header">
                 <img class="d-block mx-auto mb-4" src="/bootstrap-logo.svg" alt width="72" height="57">
                 <h1>Checkout form</h1>
@@ -20,7 +336,7 @@
                     state
                     that can be triggered by attempting to submit the form without completing it.</p>
             </header>
-    
+
             <div id="center">
                 <section id="content">
                     <h2>Billing address</h2>
@@ -55,9 +371,9 @@
                         <div class="form-group">
                             <label for="address2">Address 2 (Optional)</label>
                             <input type="text" id="address2" name="address2" placeholder="Apartment or suite">
-                        </div>
+                        </div>   
                     </form>
-    
+
                     <form>
                         <div id="location">
                             <div class="form-group">
@@ -67,7 +383,7 @@
                                     <option value="United States">United States</option>
                                 </select>
                             </div>
-    
+                            
                             <div class="form-group">
                                 <label for="state">State</label>
                                 <select id="state" name="state">
@@ -75,14 +391,14 @@
                                     <option value="California">California</option>
                                 </select>
                             </div>
-    
+                            
                             <div class="form-group">
                                 <label for="zip">Zip</label>
                                 <input type="text" id="zip" name="zip" size="14">
-                            </div>
+                            </div> 
                         </div>
                     </form>
-    
+                    
                     <div id="checkbox">
                         <form>
                             <input type="checkbox" id="shipping-address" name="shipping-address">
@@ -91,7 +407,7 @@
                             <label for="save">Save this information for next time</label>
                         </form>
                     </div>
-    
+
                     <h2>Payment</h2>
                     <form>
                         <input type="radio" id="credit" name="paying-method">
@@ -101,7 +417,7 @@
                         <input type="radio" id="paypal" name="paying-method">
                         <label for="paypal">PayPal</label>
                     </form>
-    
+
                     <div id="last-form">
                         <form>
                             <div id="card-info">
@@ -115,25 +431,25 @@
                                     <input type="text" id="cardnumber" name="cardnumber" size="32"></input>
                                 </div>
                             </div>
-    
+                            
                             <div id="card-verify">
                                 <div class="form-group">
                                     <label for="expire">Expiration</label>
                                     <input type="text" id="expire" name="expire" size="13">
                                 </div>
-    
+                                
                                 <div class="form-group">
                                     <label for="cvv">CVV</label>
                                     <input type="text" id="cvv" name="cvv" size="13">
                                 </div>
                             </div>
-    
-                            <button id="Checkout">Continue to checkout</button>
+                            
+                           <button id="Checkout">Continue to checkout</button>
                         </form>
                     </div>
-    
+
                 </section>
-    
+
                 <aside id="sidebar">
                     <div id="sidebar-title">
                         <h4>
@@ -141,7 +457,7 @@
                             <span id="three">3</span>
                         </h4>
                     </div>
-    
+
                     <ul class="listitems">
                         <li class="item">
                             <div id="item1">
@@ -157,7 +473,7 @@
                             </div>
                             <span>$8</span>
                         </li>
-    
+
                         <li class="item">
                             <div id="item3">
                                 <h6>Third item</h6>
@@ -165,7 +481,7 @@
                             </div>
                             <span>$5</span>
                         </li>
-    
+
                         <li class="item">
                             <div id="item4">
                                 <h6>Promo code</h6>
@@ -173,7 +489,7 @@
                             </div>
                             <span id="item4-span">−$5</span>
                         </li>
-    
+
                         <li class="item">
                             <div id="item5">
                                 <h6>Total (USD)</h6>
@@ -188,9 +504,9 @@
                         </form>
                     </div>
                 </aside>
-            </div>
+            </div>  
         </main>
-    
+
         <footer id="footer">
             <p>© 2017–2022 Company Name</p>
             <ul id="menu">
@@ -200,6 +516,6 @@
             </ul>
         </footer>
     </div>
-    
-    </body>
+
+</body>
 </html>
