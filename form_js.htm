@@ -7,32 +7,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Document</title>
     <style>
-        body{
+        body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             background-color: #f8f9fa;
         }
 
-        #container{
+        #container {
             padding-left: 12px;
             padding-right: 12px;
         }
 
         /* #header */
-        #header{
+        #header {
             text-align: center;
             padding: 48px;
         }
 
-        #header h1{
+        #header h1 {
             font-size: 32px;
         }
-        #header p{
+
+        #header p {
             font-size: 20px;
             font-weight: 300;
         }
 
         /* #center */
-        #center{
+        #center {
             align-items: flex-start;
             margin-left: 88px;
             margin-right: -24px;
@@ -41,36 +42,36 @@
             font-weight: 400;
             line-height: 24px;
         }
-        
+
         /* main content */
-        #content{
+        #content {
             padding-left: 152px;
             padding-right: 40px;
             max-width: 100%;
         }
 
-        #content h2{
+        #content h2 {
             font-size: 24px;
         }
 
-        #name{
+        #name {
             display: flex;
         }
 
-        .form-group{
+        .form-group {
             display: flex;
             flex-direction: column;
             padding: 8px;
-            padding-right:0px;
+            padding-right: 0px;
             padding-left: 0px;
         }
 
-        #fname{
+        #fname {
             float: left;
-            margin-right: 9px;
+            margin-right: 16px;
         }
 
-        input{
+        input {
             border-radius: 6px;
             border: 1px solid #ced4da;
             padding: 6px;
@@ -82,12 +83,12 @@
             display: inline-block;
         }
 
-        ::placeholder{
+        ::placeholder {
             color: #6c757d;
             padding-left: 4px;
         }
 
-        #Checkout{
+        #Checkout {
             background-color: #0e6efd;
             padding: 12px;
             width: 98.5%;
@@ -97,20 +98,20 @@
             color: #fff;
         }
 
-        #Checkout:hover{
+        #Checkout:hover {
             background-color: #0f63e2;
         }
 
-        #span-user{
+        #span-user {
             display: flex;
         }
 
-        #username{
-            border-bottom-left-radius:0px ;
-            border-top-left-radius:0px ;
+        #username {
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px;
         }
 
-        #at-item{
+        #at-item {
             padding-top: 6px;
             padding-bottom: 6px;
             padding-left: 12px;
@@ -119,24 +120,26 @@
             border: 1px solid#ced4da;
             border-right: #ced4da;
             display: flex;
-            border-top-left-radius:6px ;
-            border-bottom-left-radius:6px ;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
             font-size: 16px;
         }
 
-        #email, #address, #address2{
+        #email,
+        #address,
+        #address2 {
             width: 98.5%;
         }
 
-        #location{
-            display:flex;
+        #location {
+            display: flex;
             border-bottom: 1px solid #c5c6c7;
             margin-bottom: 20px;
             padding-bottom: 20px;
             gap: 18px;
         }
-        
-        select{
+
+        select {
             font-size: 1.3em;
             padding: 7.2px;
             color: #6c757d;
@@ -145,20 +148,20 @@
             border: 1px solid#ced4da;
         }
 
-        #country{
+        #country {
             width: 236px;
         }
 
-        #state{
-            width:191px;
+        #state {
+            width: 191px;
         }
 
-        #card-info{
+        #card-info {
             display: flex;
             gap: 24px;
         }
 
-        #card-verify{
+        #card-verify {
             display: flex;
             gap: 26px;
             padding-bottom: 20px;
@@ -166,11 +169,11 @@
             border-bottom: 1px solid #c5c6c7;
         }
 
-        #extra-label{
-            color:#6c757d;
+        #extra-label {
+            color: #6c757d;
         }
 
-        #checkbox{
+        #checkbox {
             padding-bottom: 20px;
             border-bottom: 1px solid #c5c6c7;
             margin-bottom: 20px;
@@ -178,12 +181,12 @@
 
         /* sidebar */
 
-        #cart{
-            padding-right:142px;
+        #cart {
+            padding-right: 142px;
             color: #0e6efd;
         }
 
-        #three{
+        #three {
             font-size: 18px;
             font-weight: 700;
             color: #fff;
@@ -196,14 +199,14 @@
             background-color: #0e6efd;
         }
 
-        #sidebar-title{
+        #sidebar-title {
             display: flexbox;
             margin-bottom: 20px;
             justify-content: space-between;
             margin-block-end: 19px;
         }
 
-        .listitems{
+        .listitems {
             list-style-type: none;
             border: 1px solid #e2e2e2;
             background-color: #fff;
@@ -212,16 +215,16 @@
             padding-left: 0px;
         }
 
-        .listitems span{
+        .listitems span {
             float: right;
             color: #697279;
         }
 
-        #item4 span{
+        #item4 span {
             color: green;
         }
 
-        .item{
+        .item {
             display: flex;
             gap: 94px;
             padding-top: 8px;
@@ -230,44 +233,53 @@
             border-bottom: 1px solid #ced4da;
         }
 
-        .item:nth-child(5){
+        .item:nth-child(5) {
             border-bottom: 0px;
         }
 
-        .item:nth-child(4){
+        .item:nth-child(4) {
             color: green;
             background-color: #f8f9fa;
         }
 
-        #item1 h6, #item2 h6, #item3 h6, #item4 h6{
+        #item1 h6,
+        #item2 h6,
+        #item3 h6,
+        #item4 h6 {
             margin-bottom: 0px;
         }
 
-        #item1 small, #item2 small, #item3 small{
+        #item1 small,
+        #item2 small,
+        #item3 small {
             color: #6c757d;
         }
 
-        #item2, #item3{
+        #item2,
+        #item3 {
             width: 50%;
         }
 
-        #item1, #item4, #item5{
+        #item1,
+        #item4,
+        #item5 {
             width: 47%;
         }
 
-        #item4-span{
+        #item4-span {
             color: green;
         }
 
-        #item5 h6{
+        #item5 h6 {
             font-weight: 400;
         }
-        #item5-span{
+
+        #item5-span {
             font-weight: bold;
             color: #000;
         }
 
-        #item-button{
+        #item-button {
             background-color: #fff;
             display: flex;
             border: 1px solid #ced4da;
@@ -275,7 +287,7 @@
             border-radius: 8px;
         }
 
-        #promocode{
+        #promocode {
             border-bottom-right-radius: 0px;
             border-top-right-radius: 0px;
             margin-right: -10px;
@@ -283,7 +295,7 @@
             padding-right: 12px;
         }
 
-        #redeem{
+        #redeem {
             color: #fff;
             padding: 6px;
             padding-left: 12px;
@@ -292,48 +304,205 @@
             margin-left: 0px;
             border-bottom-left-radius: 0px;
             border-top-left-radius: 0px;
-            border:1px solid #6c757d;
+            border: 1px solid #6c757d;
             background-color: #6c757d;
         }
 
         /* footer */
 
-        #footer{
+        #footer {
             margin: 48px;
             margin-left: 18px;
-            padding-top:48px ;
+            padding-top: 48px;
             line-height: 0.4;
             text-align: center;
         }
 
-        #footer p{
+        #footer p {
             color: #6c757d;
             padding-left: 32px;
             padding-top: 12px;
         }
 
-        #menu{
+        #menu {
             list-style-type: none;
         }
 
-        .menuitems{
+        .menuitems {
             display: inline-block;
             margin: 4px;
         }
 
-         @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        .error_text{
+            color: #dd3d4b;
+            display: none;
         }
-      }
 
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
     </style>
+    <script>
+
+        function validate_inputs(){
+            validate_firstname();
+            validate_lastname();
+            validate_username();
+            validate_address();
+            validate_country();
+            validate_state();
+            validate_zip();
+            validate_cardNo();
+            validate_cardname();
+            validate_expire();
+            validate_cvv();
+        }
+        
+        function validate_firstname() {
+            var firstNameInput = document.getElementById("firstname");
+            var errorMessage = document.getElementById("fname-error");
+
+            if (firstNameInput.value.trim() === '') {
+                firstNameInput.style.border = '1px solid red';
+                errorMessage.style.display = 'block';
+            }else{
+                firstNameInput.style.border = '1px solid green';
+            }
+        }
+
+        function validate_lastname() {
+            var lastNameInput = document.getElementById("lastname");
+            var errorMessage = document.getElementById("lname-error");
+
+            if (lastNameInput.value.trim() === '') {
+                lastNameInput.style.border = '1px solid red';
+                errorMessage.style.display = 'block';
+            }else {
+                lastNameInput.style.border = '1px solid green';
+            }
+        }
+
+        function validate_username() {
+            var userNameInput = document.getElementById("username");
+            var errorMessage = document.getElementById("username-error");
+
+            if (userNameInput.value.trim() === '') {
+                userNameInput.style.border = '1px solid red';
+                errorMessage.style.display = 'block';
+            }else {
+                userNameInput.style.border = '1px solid green';
+            }
+        }
+
+        function validate_address() {
+            var addressInput = document.getElementById("address");
+            var errorMessage = document.getElementById("address-error");
+
+            if (addressInput.value.trim() === '') {
+                addressInput.style.border = '1px solid red';
+                errorMessage.style.display = 'block';
+            }else {
+                addressInput.style.border = '1px solid green';
+            }
+        }
+
+        function validate_country() {
+            var countryInput = document.getElementById("country");
+            var errorMessage = document.getElementById("country-error");
+
+            if (countryInput.value.trim() === "Choose") {
+                countryInput.style.border = '1px solid red';
+                errorMessage.style.display = 'block';
+            } else {
+                countryInput.style.border = '1px solid green';
+            }
+        }
+
+        function validate_state() {
+            var stateInput = document.getElementById("state");
+            var errorMessage = document.getElementById("state-error");
+
+            if (stateInput.value.trim() === "Choose") {
+                stateInput.style.border = '1px solid red';
+                errorMessage.style.display = 'block';
+            } else {
+                stateInput.style.border = '1px solid green';
+            }
+        }
+
+        function validate_zip() {
+            var zipInput = document.getElementById("zip");
+            var errorMessage = document.getElementById("zip-error");
+
+            if (zipInput.value.trim() === '') {
+                zipInput.style.border = '1px solid red';
+                errorMessage.style.display = 'block';
+            } else {
+                zipInput.style.border = '1px solid green';
+            }
+        }
+
+        function validate_cardname() {
+            var cardnameInput = document.getElementById("cardname");
+            var errorMessage = document.getElementById("cardname-error");
+
+            if (cardnameInput.value.trim() === '') {
+                cardnameInput.style.border = '1px solid red';
+                errorMessage.style.display = 'block';
+            } else {
+                cardnameInput.style.border = '1px solid green';
+            }
+        }
+
+        function validate_cardNo() {
+            var cardNoInput = document.getElementById("cardnumber");
+            var errorMessage = document.getElementById("cardNo-error");
+
+            var onlyNumbers = /^[0-9]+$/;
+
+            if (cardNoInput.value.trim() === '' || !onlyNumbers.test(cardNoInput.value.trim())) {
+                cardNoInput.style.border = '1px solid red';
+                errorMessage.style.display = 'block';
+            } else {
+                cardNoInputstyle.border = '1px solid green';
+            }
+        }
+
+        function validate_expire() {
+            var expireInput = document.getElementById("expire");
+            var errorMessage = document.getElementById("expire-error");
+
+            if (expireInput.value.trim() === '') {
+                expireInput.style.border = '1px solid red';
+                errorMessage.style.display = 'block';
+            } else {
+                expireInput.style.border = '1px solid green';
+            }
+        }
+
+        function validate_cvv() {
+            var cvvInput = document.getElementById("cvv");
+            var errorMessage = document.getElementById("cvv-error");
+
+            var onlyNumbers = /^[0-9]+$/;
+
+            if (cvvInput.value.trim() === '' || !onlyNumbers.test(cvvInput.value.trim())) {
+                cvvInput.style.border = '1px solid red';
+                errorMessage.style.display = 'block';
+            } else {
+                cvvInput.style.border = '1px solid green';
+            }
+        }
+    
+    </script>
 </head>
 
 <body>
 
     <div id="container">
-        <main> 
+        <main>
             <header id="header">
                 <img class="d-block mx-auto mb-4" src="/bootstrap-logo.svg" alt width="72" height="57">
                 <h1>Checkout form</h1>
@@ -347,14 +516,16 @@
                 <section id="content">
                     <h2>Billing address</h2>
                     <div id="name">
-                        <form>
+                        <form id="name-form">
                             <div class="form-group" id="fname">
-                                <label for="fname">First name<br></label>
-                                <input type="text" id="fname" name="fname" size="32" required>
+                                <label for="firstname">First name<br></label>
+                                <input type="text" id="firstname" name="firstname" size="32">
+                                <small id="fname-error" class="error_text">Valid first name is required</small>
                             </div>
                             <div class="form-group" id="lname">
-                                <label for="lname">Last name<br></label>
-                                <input type="text" id="lname" name="lname" size="32" required>
+                                <label for="lastname">Last name<br></label>
+                                <input type="text" id="lastname" name="lastname" size="32">
+                                <small id="lname-error" class="error_text">Valid last name is required</small>
                             </div>
                         </form>
                     </div>
@@ -363,8 +534,9 @@
                             <label for="username">Username</label>
                             <div id="span-user">
                                 <span id="at-item">@</span>
-                                <input type="text" id="username" name="username" placeholder="Username" size="64" required>
+                                <input type="text" id="username" name="username" placeholder="Username" size="64">
                             </div>
+                            <small id="username-error" class="error_text">Your username is required.</small>
                         </div>
                         <div class="form-group">
                             <label for="email">Email (Optional)</label>
@@ -372,39 +544,43 @@
                         </div>
                         <div class="form-group">
                             <label for="address">Address</label>
-                            <input type="text" id="address" name="address" placeholder="1234 Main St" required>
+                            <input type="text" id="address" name="address" placeholder="1234 Main St">
+                            <small id="address-error" class="error_text">Please enter your shipping address.</small>
                         </div>
                         <div class="form-group">
                             <label for="address2">Address 2 (Optional)</label>
                             <input type="text" id="address2" name="address2" placeholder="Apartment or suite">
-                        </div>   
+                        </div>
                     </form>
 
                     <form>
                         <div id="location">
                             <div class="form-group">
                                 <label for="country">Country</label>
-                                <select id="country" name="country" required>
+                                <select id="country" name="country">
                                     <option value="Choose">Choose...</option>
                                     <option value="United States">United States</option>
                                 </select>
+                                <small id="country-error" class="error_text">Please select a valid country.</small>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="state">State</label>
-                                <select id="state" name="state" required>
+                                <select id="state" name="state">
                                     <option value="Choose">Choose...</option>
                                     <option value="California">California</option>
                                 </select>
+                                <small id="state-error" class="error_text">Please provide a valid state.</small>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="zip">Zip</label>
-                                <input type="text" id="zip" name="zip" size="14" required>
-                            </div> 
+                                <input type="text" id="zip" name="zip" size="14">
+                                <small id="zip-error" class="error_text">Zip code required.</small>
+                            </div>
                         </div>
                     </form>
-                    
+
                     <div id="checkbox">
                         <form>
                             <input type="checkbox" id="shipping-address" name="shipping-address">
@@ -429,28 +605,32 @@
                             <div id="card-info">
                                 <div class="form-group">
                                     <label for="cardname">Name on card</label>
-                                    <input type="text" id="cardname" name="cardname" size="32" required>
+                                    <input type="text" id="cardname" name="cardname" size="32">
                                     <small id="extra-label">Full name as displayed on card</small>
+                                    <small id="cardname-error" class="error_text">Name on card is required</small>
                                 </div>
                                 <div class="form-group">
                                     <label for="cardnumber">Credit card number</label>
-                                    <input type="text" id="cardnumber" name="cardnumber" size="32" required>
+                                    <input type="text" id="cardnumber" name="cardnumber" size="32">
+                                    <small id="cardNo-error" class="error_text">Credit card number is required</small>
                                 </div>
                             </div>
-                            
+
                             <div id="card-verify">
                                 <div class="form-group">
                                     <label for="expire">Expiration</label>
-                                    <input type="text" id="expire" name="expire" size="13" required>
+                                    <input type="text" id="expire" name="expire" size="13">
+                                    <small id="expire-error" class="error_text">Expiration date required</small>
                                 </div>
-                                
+
                                 <div class="form-group">
                                     <label for="cvv">CVV</label>
-                                    <input type="text" id="cvv" name="cvv" size="13" maxlength="3" required>
+                                    <input type="text" id="cvv" name="cvv" size="13" maxlength="3">
+                                    <small id="cvv-error" class="error_text">Security code required</small>
                                 </div>
                             </div>
-                            
-                           <button id="Checkout">Continue to checkout</button>
+
+                            <button id="Checkout" type="button" onclick="validate_inputs()">Continue to checkout</button>
                         </form>
                     </div>
 
@@ -510,7 +690,7 @@
                         </form>
                     </div>
                 </aside>
-            </div>  
+            </div>
         </main>
 
         <footer id="footer">
@@ -524,4 +704,5 @@
     </div>
 
 </body>
+
 </html>
