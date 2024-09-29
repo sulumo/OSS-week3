@@ -9,3 +9,12 @@ th {
     padding: 8px;
 }
 
+.edit-btn,
+.delete-btn {
+    transition: transform 0.2s;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    transform: scale(1.05);
+}
